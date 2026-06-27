@@ -1,0 +1,9 @@
+{
+    "actorSpecification": 1,
+    "name": "deltadocs",
+    "title": "DeltaDocs — docs to LLM-ready chunks",
+    "description": "Crawl a documentation site into clean, heading-aware, hash-stamped, LLM-ready chunks plus llms.txt / llms-full.txt.",
+    "version": "0.1",
+    "input": "./input_schema.json",
+    "dockerfile": "../Dockerfile"
+}

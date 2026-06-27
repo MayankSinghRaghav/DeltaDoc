@@ -1,0 +1,28 @@
+# DeltaDocs
+
+> Crawl a documentation site into clean, chunked, hash-stamped, LLM-ready output, and emit only what changed between runs (a ChangeSet of added/modified/removed chunks). v1 one-shot extractor + v2 delta engine. SHA-256 over normalized text is the diff key.
+
+## Docs
+- [README](README.md): overview, install, CLI + Apify quickstart, ChangeSet schema, tests
+- [Launch post](LAUNCH.md): short announcement and positioning
+
+## Core modules
+- [schema.py](src/deltadocs/schema.py): PageRecord / ChunkRecord / RawPage (v1) + ChangeSet (v2)
+- [crawler.py](src/deltadocs/crawler.py): in-domain crawl (sitemap + links, robots.txt, globs, depth)
+- [extract.py](src/deltadocs/extract.py): main-content extraction to markdown + normalization + hashing
+- [chunk.py](src/deltadocs/chunk.py): heading-aware chunking + per-chunk hashing
+- [diff.py](src/deltadocs/diff.py): v2 delta engine (added/modified/removed) + state persistence
+- [deliver.py](src/deltadocs/deliver.py): v3 vector-DB push (Chroma) + webhook/Slack alerts
+- [enrich.py](src/deltadocs/enrich.py): v3 per-change LLM summary + tags (provider-agnostic)
+- [mcp_server.py](src/deltadocs/mcp_server.py): v3 MCP server exposing crawl_docs / diff_docs
+- [pipeline.py](src/deltadocs/pipeline.py): crawl->extract->chunk and llms.txt / llms-full.txt builders
+- [cli.py](src/deltadocs/cli.py): OSS CLI (one-shot + --state-dir change tracking)
+- [main.py](src/deltadocs/main.py): Apify Actor entry (KV-store state, changed-chunk output + pricing)
+
+## Acceptance
+- [run_real_sites.py](scripts/run_real_sites.py): 10-real-sites >=90% non-empty-markdown harness
+- [tests](tests): contract, crawler, extractor, chunker, pipeline, §8 acceptance, and v2 golden-file diff
+
+## Store listing (SEO — set in the Apify Actor settings)
+- seoTitle: "DeltaDocs — Change-Tracked, LLM-Ready Docs Chunks (+ llms.txt)"
+- seoDescription: "Crawl any docs site into clean, heading-aware, hash-stamped chunks and emit only what changed between runs — cheap, change-only RAG re-indexing. OSS + Apify Actor."

@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+.pytest_cache/
+.venv/
+venv/
+dist/
+build/
+.env
+
+# Apify local run storage
+storage/
+apify_storage/
+
+# stray sandbox probe files (safe to delete)
+_probe*.txt

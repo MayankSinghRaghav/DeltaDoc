@@ -1,0 +1,52 @@
+{
+    "title": "DeltaDocs input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "start_url": {
+            "title": "Start URL",
+            "type": "string",
+            "editor": "textfield",
+            "description": "Documentation site root to crawl.",
+            "prefill": "https://docs.apify.com"
+        },
+        "max_pages": {
+            "title": "Max pages",
+            "type": "integer",
+            "editor": "number",
+            "description": "Maximum number of pages to fetch.",
+            "default": 100,
+            "minimum": 1
+        },
+        "include_globs": {
+            "title": "Include globs",
+            "type": "array",
+            "editor": "stringList",
+            "description": "Only crawl URL paths matching these globs, e.g. /docs/*.",
+            "default": []
+        },
+        "exclude_globs": {
+            "title": "Exclude globs",
+            "type": "array",
+            "editor": "stringList",
+            "description": "Skip URL paths matching these globs, e.g. /blog/*.",
+            "default": []
+        },
+        "chunk_strategy": {
+            "title": "Chunk strategy",
+            "type": "string",
+            "editor": "select",
+            "enum": ["heading"],
+            "default": "heading",
+            "description": "v1 supports heading-aware chunking only."
+        },
+        "respect_robots_txt": {
+            "title": "Respect robots.txt",
+            "type": "boolean",
+            "editor": "checkbox",
+            "default": true,
+            "description": "Honor the target site's robots.txt."
+        }
+    },
+    "required": ["start_url"]
+}
