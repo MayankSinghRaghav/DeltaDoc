@@ -1,6 +1,17 @@
 <div align="center">
 
 ```
+        █     █
+         █   █
+        ███████
+       ██ ███ ██
+      ███████████
+      █ ███████ █
+      █ █     █ █
+         ██ ██
+```
+
+```
 ██████╗ ███████╗██╗     ████████╗ █████╗
 ██╔══██╗██╔════╝██║     ╚══██╔══╝██╔══██╗
 ██║  ██║█████╗  ██║        ██║   ███████║
@@ -17,28 +28,32 @@
 ```
 
 <p>
-  <a href="https://github.com/MayankSinghRaghav/DeltaDoc/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/MayankSinghRaghav/DeltaDoc/ci.yml?style=for-the-badge&logo=githubactions&logoColor=white&label=BUILD&color=7C3AED" alt="Build"></a>
-  <img src="https://img.shields.io/badge/PYTHON-3.10--3.12-8B5CF6?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.10-3.12">
-  <img src="https://img.shields.io/badge/TESTS-40_PASSING-F72585?style=for-the-badge" alt="40 tests">
-  <img src="https://img.shields.io/badge/VER-0.4.0-00B4D8?style=for-the-badge" alt="v0.4.0">
-  <img src="https://img.shields.io/badge/LICENSE-MIT-7C3AED?style=for-the-badge" alt="MIT">
+  <a href="https://github.com/MayankSinghRaghav/DeltaDoc/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/MayankSinghRaghav/DeltaDoc/ci.yml?style=for-the-badge&logo=githubactions&logoColor=white&label=BUILD&color=9D4EDD" alt="Build"></a>
+  <img src="https://img.shields.io/badge/PYTHON-3.10--3.12-3A86FF?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.10-3.12">
+  <img src="https://img.shields.io/badge/HI--SCORE-40%2F40_TESTS-06D6A0?style=for-the-badge" alt="40 tests">
+  <img src="https://img.shields.io/badge/VER-0.4.0-FFD60A?style=for-the-badge&logoColor=black" alt="v0.4.0">
+  <img src="https://img.shields.io/badge/LICENSE-MIT-E63946?style=for-the-badge" alt="MIT">
 </p>
 
-### ▰▱▰ DOCS IN. ►► ONLY WHAT CHANGED OUT. ▰▱▰
+### ► DOCS IN.  ►►  ONLY WHAT CHANGED OUT. ◄
 
 Turn any documentation site into clean, chunked, hash-stamped, **LLM-ready** output —
 then re-index **only the chunks that actually changed**, so your RAG stays fresh
 without paying to re-embed the entire corpus on every run.
 
-`▶` [QUICKSTART](#-press-start--quickstart) &nbsp;·&nbsp; `▶` [HOW IT WORKS](#-how-it-works) &nbsp;·&nbsp; `▶` [FEATURES](#-features) &nbsp;·&nbsp; `▶` [INTEGRATIONS](#-integrations) &nbsp;·&nbsp; `▶` [OUTPUT](#-output)
+`▶` [QUICKSTART](#quickstart) &nbsp;·&nbsp; `▶` [HOW IT WORKS](#how-it-works) &nbsp;·&nbsp; `▶` [FEATURES](#features) &nbsp;·&nbsp; `▶` [INTEGRATIONS](#integrations) &nbsp;·&nbsp; `▶` [OUTPUT](#output)
+
+`♥ ♥ ♥`  &nbsp;·&nbsp;  `PLAYER 1`  &nbsp;·&nbsp;  `INSERT URL TO START`
 
 </div>
 
 ```
-═══════════════════════════════════════════════════════════════
+████ ████ ████ ████ ████ ████ ████ ████ ████ ████
 ```
 
-## ◢◤ WHY DELTADOCS?
+`▰▰▰ WORLD 1 ▰▰▰`
+
+## WHY DELTADOCS?
 
 If you run a RAG chatbot or AI agent over **someone else's docs**, you're stuck picking between two bad options:
 
@@ -57,13 +72,15 @@ Great one-shot tools (Firecrawl, Crawl4AI) turn a URL into clean markdown. **Non
 
 > 🔑 Every chunk carries a **SHA-256 over _normalized_ text**, so a re-run emits **only the chunks that actually changed** — and ships them straight to your vector store.
 
-Because the hash ignores whitespace and formatting noise, an unchanged page produces **zero** changes on re-run. You only ever re-embed real edits. ★ HIGH SCORE.
+Because the hash ignores whitespace and formatting noise, an unchanged page produces **zero** changes on re-run. You only ever re-embed real edits. ★ NEW HI-SCORE.
 
 ```
-═══════════════════════════════════════════════════════════════
+████ ████ ████ ████ ████ ████ ████ ████ ████ ████
 ```
 
-## ▶ PRESS START — QUICKSTART
+`▰▰▰ WORLD 2 ▰▰▰`
+
+## QUICKSTART
 
 > **Prerequisites:** Python **3.10+** and Git. _(Windows PowerShell shown; on macOS/Linux use `source .venv/bin/activate`.)_
 
@@ -111,10 +128,12 @@ Add adapters as you need them:
 </details>
 
 ```
-═══════════════════════════════════════════════════════════════
+████ ████ ████ ████ ████ ████ ████ ████ ████ ████
 ```
 
-## ⚙ HOW IT WORKS
+`▰▰▰ WORLD 3 ▰▰▰`
+
+## HOW IT WORKS
 
 ```
         [ DOCS SITE ]
@@ -142,10 +161,12 @@ Add adapters as you need them:
 5. **Deliver / enrich** — upsert changed chunks (delete removed) into your vector DB, summarize them, or ping Slack.
 
 ```
-═══════════════════════════════════════════════════════════════
+████ ████ ████ ████ ████ ████ ████ ████ ████ ████
 ```
 
-## ★ FEATURES
+`▰▰▰ WORLD 4 ▰▰▰`
+
+## FEATURES
 
 | | |
 |---|---|
@@ -161,10 +182,12 @@ Add adapters as you need them:
 | ☁️ **Two ways to run** | OSS Python CLI **and** a deployable Apify Actor (pay-per-event on changed chunks) |
 
 ```
-═══════════════════════════════════════════════════════════════
+████ ████ ████ ████ ████ ████ ████ ████ ████ ████
 ```
 
-## ⧉ INTEGRATIONS
+`▰▰▰ WORLD 5 ▰▰▰`
+
+## INTEGRATIONS
 
 Optional, dependency-light. Wire deltas into your stack in a couple of lines:
 
@@ -196,10 +219,12 @@ enriched = enrich_changeset(changeset, make_anthropic_summarizer())   # or make_
 Full GitHub + Apify publishing steps live in **[PUBLISHING.md](PUBLISHING.md)**.
 
 ```
-═══════════════════════════════════════════════════════════════
+████ ████ ████ ████ ████ ████ ████ ████ ████ ████
 ```
 
-## ▭ OUTPUT
+`▰▰▰ WORLD 6 ▰▰▰`
+
+## OUTPUT
 
 The two core artifacts are **`ChunkRecord`** (the unit of content) and **`ChangeSet`** (the delta). Example `ChangeSet`:
 
@@ -223,20 +248,24 @@ The two core artifacts are **`ChunkRecord`** (the unit of content) and **`Change
 ```
 
 ```
-═══════════════════════════════════════════════════════════════
+████ ████ ████ ████ ████ ████ ████ ████ ████ ████
 ```
 
-## ✓ QUALITY
+`▰▰▰ WORLD 7 ▰▰▰`
+
+## QUALITY
 
 `pytest` runs **40 deterministic, offline tests** — no keys, network, DB, or MCP needed; everything external is faked or mocked. CI runs them on **Python 3.10–3.12** on every push.
 
 The live acceptance harness (`scripts/run_real_sites.py`) reports the non-empty-markdown rate across real docs sites and **flags likely JavaScript-rendered sites** as candidates for a future Playwright fallback.
 
 ```
-═══════════════════════════════════════════════════════════════
+████ ████ ████ ████ ████ ████ ████ ████ ████ ████
 ```
 
-## ◐ ROADMAP
+`▰▰▰ WORLD 8 ▰▰▰`
+
+## ROADMAP
 
 ```
   [██████████████████████] SHIPPED
@@ -249,10 +278,12 @@ The live acceptance harness (`scripts/run_real_sites.py`) reports the non-empty-
 ```
 
 ```
-═══════════════════════════════════════════════════════════════
+████ ████ ████ ████ ████ ████ ████ ████ ████ ████
 ```
 
-## ⌂ PROJECT LAYOUT
+`▰▰▰ BONUS STAGE ▰▰▰`
+
+## PROJECT LAYOUT
 
 ```
 src/deltadocs/   schema · crawler · extract · chunk · diff · pipeline · deliver · enrich · mcp_server · cli · main
@@ -264,18 +295,20 @@ assets/          logo                  PUBLISHING.md · LAUNCH.md · llms.txt
 ```
 
 ```
-═══════════════════════════════════════════════════════════════
+████ ████ ████ ████ ████ ████ ████ ████ ████ ████
 ```
 
 <div align="center">
 
-### © LICENSE
+## LICENSE
 
 [MIT](LICENSE) © 2026 **Mayank Singh Raghav**
 
 ```
 ╔════════════════════════════════════════════════╗
 ║  RE-EMBED 5 CHUNKS, NOT 5,000.   ★ PLAYER 1 ★   ║
+╠════════════════════════════════════════════════╣
+║          INSERT COIN ►  CONTINUE? 9            ║
 ╚════════════════════════════════════════════════╝
 ```
 
